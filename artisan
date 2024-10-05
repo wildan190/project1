@@ -1,0 +1,6 @@
+#!/usr/bin/env php
+<?php
+
+// Jalankan server built-in PHP
+$command = "php -S localhost:8080 -t public";
+system($command);
