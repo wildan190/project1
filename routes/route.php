@@ -5,7 +5,7 @@ require_once __DIR__ . '/../app/controller/CategoryController.php';
 // Simple routing based on URL path
 $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-if ($path == 'categories' || $path == '/categories') {
+if ($path == '/' || $path == '/categories') {
     (new CategoryController())->index();
 } elseif ($path == '/categories/create') {
     (new CategoryController())->create();
